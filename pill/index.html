@@ -10,7 +10,7 @@
 <meta property="og:title" content="生理痛・PMS・生理不順の相談|保険適用ピル(LEP)処方|日本橋の婦人科フィーカレディースクリニック">
 <meta property="og:description" content="つらい生理痛・PMS・生理不順は治療できる症状です。月経困難症には保険適用のピル(LEP)処方に対応。日本橋駅すぐ・女性医師在籍・完全予約制。WEB予約24時間受付。">
 <meta property="og:url" content="https://www.fika-ladies-clinic.com/pill/">
-<meta property="og:image" content="https://lh3.googleusercontent.com/d/1Q29Ru1FLhIpAp2xWh9G6qQPrYXEdShAz=w200">
+<meta property="og:image" content="https://www.fika-ladies-clinic.com/lp_assets/logo.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" type="image/png" href="/favicon.png" sizes="512x512">
@@ -28,7 +28,7 @@
        flow / doctor / access / faq / closing の中身を差し替えるだけで
        他LPが作れる構造
     4. 画像の参照先:
-       - Google Drive共有画像(lh3.googleusercontent.com) → 本番はサーバー配置に差し替え推奨
+       - 画像はすべて lp_assets/ にサーバー配置済み(2026-07-11 Drive参照から移行)
        - lp_assets/ フォルダ → Adobe Stockライセンス取得済み画像
          (office-street.jpg = AdobeStock_104986477 / relax-sofa.jpg = AdobeStock_1899449206)
          HTMLと同じ階層に lp_assets フォルダごとアップロードすること
@@ -231,7 +231,7 @@ header{
 /* 全幅フォトバンド(セクション間の抜け) */
 .photo-band{
   height:340px;
-  background:url("https://lh3.googleusercontent.com/d/1xe5VT3QvGvNuNtZcwS5HjHrvUVaCV5y0=w1600") center 30%/cover no-repeat;
+  background:url("/lp_assets/exam-room.jpg") center 30%/cover no-repeat;
   position:relative;
 }
 .photo-band::after{content:"";position:absolute;inset:0;background:linear-gradient(rgba(250,248,242,.12), rgba(250,248,242,.12));}
@@ -436,7 +436,7 @@ br.sp{display:none;}
 <header>
   <div class="header-in">
     <div class="header-logo">
-      <img src="https://lh3.googleusercontent.com/d/1Q29Ru1FLhIpAp2xWh9G6qQPrYXEdShAz=w200" alt="フィーカレディースクリニック ロゴ">
+      <img src="/lp_assets/logo.png" alt="フィーカレディースクリニック ロゴ">
       <div class="t">
         <small>日本橋駅B4出口すぐ|婦人科・内科</small>
         <strong>フィーカレディースクリニック</strong>
@@ -476,8 +476,8 @@ br.sp{display:none;}
     </div>
     <div class="hero-imgs">
       <img src="/lp_assets/relax-sofa.jpg" alt="自宅でくつろぐ女性">
-      <img src="https://lh3.googleusercontent.com/d/1bh059pGto1458E5_Gz34hU51Ntdwz7Cz=w800" alt="院内ラウンジ">
-      <img src="https://lh3.googleusercontent.com/d/1xe5VT3QvGvNuNtZcwS5HjHrvUVaCV5y0=w800" alt="診察室">
+      <img src="/lp_assets/lounge.jpg" alt="院内ラウンジ">
+      <img src="/lp_assets/exam-room.jpg" alt="診察室">
     </div>
    </div>
   </div>
@@ -500,7 +500,7 @@ br.sp{display:none;}
         </ul>
       </div>
       <div class="worry-side">
-        <img src="https://lh3.googleusercontent.com/d/1IgRMevt_6y3duIYRg5e9TP1r6huJgjCE=w800" alt="やわらかな雰囲気の待合スペース" loading="lazy">
+        <img src="/lp_assets/library.jpg" alt="やわらかな雰囲気の待合スペース" loading="lazy">
       </div>
     </div>
     <div class="worry-note">月経のつらさは、我慢するものではなく<strong>「治療できる」</strong>ものです。<br>とくに日常生活に支障が出るほどの生理痛(月経困難症)は、<strong>保険診療の対象</strong>です。</div>
@@ -567,11 +567,11 @@ br.sp{display:none;}
     <h2>フィーカレディースクリニックが<br class="sp">選ばれる理由</h2>
     <div class="str-grid">
       <div class="str-card">
-        <img src="https://lh3.googleusercontent.com/d/18HrVt6UDFMq9x5QrUF8Ionpubo4knjVK=w1000" alt="女性医師による診療" loading="lazy">
+        <img src="/lp_assets/director-sano.jpg" alt="女性医師による診療" loading="lazy">
         <div class="str-body"><p class="str-num">REASON 01</p><h3>月経のお悩みを専門的に診る女性医師</h3><p>産婦人科専門医・女性ヘルスケア専門医が在籍。月経困難症や子宮内膜症の背景疾患まで含めて診察します。</p></div>
       </div>
       <div class="str-card">
-        <img src="https://lh3.googleusercontent.com/d/1IgRMevt_6y3duIYRg5e9TP1r6huJgjCE=w1000" alt="院内の待合スペース" loading="lazy">
+        <img src="/lp_assets/library.jpg" alt="院内の待合スペース" loading="lazy">
         <div class="str-body"><p class="str-num">REASON 02</p><h3>日本橋駅B4出口すぐ。平日18:30まで診療</h3><p>お仕事帰りに通院しやすい立地・診療時間です(月火木金18:30まで/受付18:00まで)。ピルの継続処方にも通いやすい環境です。</p></div>
       </div>
       <div class="str-card">
@@ -579,7 +579,7 @@ br.sp{display:none;}
         <div class="str-body"><p class="str-num">REASON 03</p><h3>完全予約制+オンライン診療でピルの継続も負担なく</h3><p>再診の方は、月経コントロール外来としてオンライン診療(melmo)にも対応。通院負担を抑えながら治療を続けられます。</p></div>
       </div>
       <div class="str-card">
-        <img src="https://lh3.googleusercontent.com/d/1bh059pGto1458E5_Gz34hU51Ntdwz7Cz=w1000" alt="院内ラウンジ" loading="lazy">
+        <img src="/lp_assets/lounge.jpg" alt="院内ラウンジ" loading="lazy">
         <div class="str-body"><p class="str-num">REASON 04</p><h3>気軽に相談できる雰囲気づくり</h3><p>「フィーカ」とは仕事のあいまのひととき。婦人科に行くハードルを下げたい、という思いで運営しています。</p></div>
       </div>
     </div>
@@ -613,7 +613,7 @@ br.sp{display:none;}
     <p class="sec-label">DOCTOR</p>
     <h2>医師紹介</h2>
     <div class="doc-card">
-      <img src="https://lh3.googleusercontent.com/d/18HrVt6UDFMq9x5QrUF8Ionpubo4knjVK=w1000" alt="院長 佐野麻利子">
+      <img src="/lp_assets/director-sano.jpg" alt="院長 佐野麻利子">
       <div>
         <p class="doc-role">院長</p>
         <p class="doc-name">佐野 麻利子<small>産婦人科専門医</small></p>
@@ -632,9 +632,9 @@ br.sp{display:none;}
     <p class="sec-label">GALLERY</p>
     <h2>院内・ご来院のご案内</h2>
     <div class="gallery-grid">
-      <figure><img src="https://lh3.googleusercontent.com/d/1bh059pGto1458E5_Gz34hU51Ntdwz7Cz=w800" alt="待合ラウンジ" loading="lazy"><figcaption>カフェのようにくつろげる待合ラウンジ</figcaption></figure>
-      <figure><img src="https://lh3.googleusercontent.com/d/1IgRMevt_6y3duIYRg5e9TP1r6huJgjCE=w800" alt="ライブラリー" loading="lazy"><figcaption>本を手に取れるライブラリースペース</figcaption></figure>
-      <figure><img src="https://lh3.googleusercontent.com/d/1xe5VT3QvGvNuNtZcwS5HjHrvUVaCV5y0=w800" alt="診察室" loading="lazy"><figcaption>プライバシーに配慮した診察室</figcaption></figure>
+      <figure><img src="/lp_assets/lounge.jpg" alt="待合ラウンジ" loading="lazy"><figcaption>カフェのようにくつろげる待合ラウンジ</figcaption></figure>
+      <figure><img src="/lp_assets/library.jpg" alt="ライブラリー" loading="lazy"><figcaption>本を手に取れるライブラリースペース</figcaption></figure>
+      <figure><img src="/lp_assets/exam-room.jpg" alt="診察室" loading="lazy"><figcaption>プライバシーに配慮した診察室</figcaption></figure>
       <figure><img src="https://fika-lc.jp/img/access/access01.png" alt="ビル入口" loading="lazy"><figcaption>「日本橋髙島屋三井ビルディング」入口</figcaption></figure>
       <figure><img src="https://fika-lc.jp/img/access/access04.png" alt="ロビー直通エレベーター" loading="lazy"><figcaption>直通エレベーターで9Fロビーへ</figcaption></figure>
       <figure><img src="https://fika-lc.jp/img/access/access06.png" alt="10F廊下" loading="lazy"><figcaption>10Fの廊下 突き当り右手が当院です</figcaption></figure>

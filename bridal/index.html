@@ -10,7 +10,7 @@
 <meta property="og:title" content="ブライダルチェック・妊活検査|日本橋のフィーカレディースクリニック【自由診療】">
 <meta property="og:description" content="結婚・妊娠の前に、自分のからだを知る。ブライダル健診29,000円(税込)〜、AMH検査、性感染症検査、妊活スタート検査に対応。日本橋駅すぐ・女性医師在籍の婦人科。※自由診療">
 <meta property="og:url" content="https://www.fika-ladies-clinic.com/bridal/">
-<meta property="og:image" content="https://lh3.googleusercontent.com/d/1Q29Ru1FLhIpAp2xWh9G6qQPrYXEdShAz=w200">
+<meta property="og:image" content="https://www.fika-ladies-clinic.com/lp_assets/logo.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" type="image/png" href="/favicon.png" sizes="512x512">
@@ -28,7 +28,7 @@
        flow / doctor / access / faq / closing の中身を差し替えるだけで
        他LPが作れる構造
     4. 画像の参照先:
-       - Google Drive共有画像(lh3.googleusercontent.com) → 本番はサーバー配置に差し替え推奨
+       - 画像はすべて lp_assets/ にサーバー配置済み(2026-07-11 Drive参照から移行)
        - lp_assets/ フォルダ → Adobe Stockライセンス取得済み画像
          (office-street.jpg = AdobeStock_104986477 / relax-sofa.jpg = AdobeStock_1899449206)
          HTMLと同じ階層に lp_assets フォルダごとアップロードすること
@@ -156,7 +156,7 @@ header{
   background:
     linear-gradient(rgba(250,248,242,.34), rgba(250,248,242,.34)),
     linear-gradient(100deg, rgba(250,248,242,.94) 0%, rgba(250,248,242,.74) 42%, rgba(250,248,242,.14) 100%),
-    url("https://lh3.googleusercontent.com/d/1IgRMevt_6y3duIYRg5e9TP1r6huJgjCE=w1600") center/cover no-repeat;
+    url("/lp_assets/library.jpg") center/cover no-repeat;
   animation:heroZoom 18s ease-out forwards;
 }
 @keyframes heroZoom{from{transform:scale(1.08);}to{transform:scale(1);}}
@@ -194,7 +194,7 @@ header{
   .hero{min-height:520px;}
   .hero-bg{background:
     linear-gradient(rgba(250,248,242,.76), rgba(250,248,242,.76)),
-    url("https://lh3.googleusercontent.com/d/1IgRMevt_6y3duIYRg5e9TP1r6huJgjCE=w1200") center/cover no-repeat;}
+    url("/lp_assets/library.jpg") center/cover no-repeat;}
 }
 
 /* ---------- worries ---------- */
@@ -231,7 +231,7 @@ header{
 /* 全幅フォトバンド(セクション間の抜け) */
 .photo-band{
   height:340px;
-  background:url("https://lh3.googleusercontent.com/d/1bh059pGto1458E5_Gz34hU51Ntdwz7Cz=w1600") center 30%/cover no-repeat;
+  background:url("/lp_assets/lounge.jpg") center 30%/cover no-repeat;
   position:relative;
 }
 .photo-band::after{content:"";position:absolute;inset:0;background:linear-gradient(rgba(250,248,242,.12), rgba(250,248,242,.12));}
@@ -345,7 +345,7 @@ header{
   text-align:center;
   background:
     linear-gradient(rgba(69,73,54,.82), rgba(69,73,54,.82)),
-    url("https://lh3.googleusercontent.com/d/1xe5VT3QvGvNuNtZcwS5HjHrvUVaCV5y0=w1600") center/cover no-repeat;
+    url("/lp_assets/exam-room.jpg") center/cover no-repeat;
   color:#fff;padding:88px 20px;
 }
 .closing h2{color:#fff;margin-bottom:14px;}
@@ -436,7 +436,7 @@ br.sp{display:none;}
 <header>
   <div class="header-in">
     <div class="header-logo">
-      <img src="https://lh3.googleusercontent.com/d/1Q29Ru1FLhIpAp2xWh9G6qQPrYXEdShAz=w200" alt="フィーカレディースクリニック ロゴ">
+      <img src="/lp_assets/logo.png" alt="フィーカレディースクリニック ロゴ">
       <div class="t">
         <small>日本橋駅B4出口すぐ|婦人科・内科</small>
         <strong>フィーカレディースクリニック</strong>
@@ -476,9 +476,9 @@ br.sp{display:none;}
     </div>
     </div>
     <div class="hero-imgs">
-      <img src="https://lh3.googleusercontent.com/d/1IgRMevt_6y3duIYRg5e9TP1r6huJgjCE=w1200" alt="ライブラリースペース">
-      <img src="https://lh3.googleusercontent.com/d/1bh059pGto1458E5_Gz34hU51Ntdwz7Cz=w800" alt="院内ラウンジ">
-      <img src="https://lh3.googleusercontent.com/d/1xe5VT3QvGvNuNtZcwS5HjHrvUVaCV5y0=w800" alt="診察室">
+      <img src="/lp_assets/library.jpg" alt="ライブラリースペース">
+      <img src="/lp_assets/lounge.jpg" alt="院内ラウンジ">
+      <img src="/lp_assets/exam-room.jpg" alt="診察室">
     </div>
    </div>
   </div>
@@ -594,19 +594,19 @@ br.sp{display:none;}
     <h2>フィーカレディースクリニックで<br class="sp">受けるメリット</h2>
     <div class="str-grid">
       <div class="str-card">
-        <img src="https://lh3.googleusercontent.com/d/1bh059pGto1458E5_Gz34hU51Ntdwz7Cz=w1000" alt="院内ラウンジ" loading="lazy">
+        <img src="/lp_assets/lounge.jpg" alt="院内ラウンジ" loading="lazy">
         <div class="str-body"><p class="str-num">MERIT 01</p><h3>検査から妊活サポートまで、婦人科として継続的に伴走</h3><p>検査で終わりではなく、結果に応じた栄養サポート、タイミング指導(妊活サポート)、必要時の専門施設へのご紹介まで、かかりつけ婦人科として長く寄り添います。</p></div>
       </div>
       <div class="str-card">
-        <img src="https://lh3.googleusercontent.com/d/1xe5VT3QvGvNuNtZcwS5HjHrvUVaCV5y0=w1000" alt="診察室" loading="lazy">
+        <img src="/lp_assets/exam-room.jpg" alt="診察室" loading="lazy">
         <div class="str-body"><p class="str-num">MERIT 02</p><h3>産婦人科専門医・生殖医療専門医が在籍</h3><p>院長は産婦人科専門医・医学博士。生殖医療専門医も在籍し、妊娠・妊活に関する専門的なご相談が可能です。</p></div>
       </div>
       <div class="str-card">
-        <img src="https://lh3.googleusercontent.com/d/18HrVt6UDFMq9x5QrUF8Ionpubo4knjVK=w1000" alt="女性医師による診療" loading="lazy">
+        <img src="/lp_assets/director-sano.jpg" alt="女性医師による診療" loading="lazy">
         <div class="str-body"><p class="str-num">MERIT 03</p><h3>女性医師による診療で、デリケートな検査も安心</h3><p>在籍医師は女性です。初めての婦人科でも、リラックスして受けていただけるよう配慮しています。</p></div>
       </div>
       <div class="str-card">
-        <img src="https://lh3.googleusercontent.com/d/1IgRMevt_6y3duIYRg5e9TP1r6huJgjCE=w1000" alt="待合スペース" loading="lazy">
+        <img src="/lp_assets/library.jpg" alt="待合スペース" loading="lazy">
         <div class="str-body"><p class="str-num">MERIT 04</p><h3>日本橋駅すぐ。結果説明はオンライン対応も</h3><p>日本橋駅B4出口すぐ・東京駅徒歩6分。自費検査の結果説明はオンライン診療(melmo)にも対応しており、お忙しい方も通いやすい体制です。</p></div>
       </div>
     </div>
@@ -641,7 +641,7 @@ br.sp{display:none;}
     <h2>医師紹介</h2>
     <div class="doc-grid2">
       <div class="doc-card">
-        <img src="https://lh3.googleusercontent.com/d/18HrVt6UDFMq9x5QrUF8Ionpubo4knjVK=w1000" alt="院長 佐野麻利子">
+        <img src="/lp_assets/director-sano.jpg" alt="院長 佐野麻利子">
         <div>
           <p class="doc-role">院長</p>
           <p class="doc-name">佐野 麻利子<small>産婦人科専門医</small></p>
@@ -670,9 +670,9 @@ br.sp{display:none;}
     <p class="sec-label">GALLERY</p>
     <h2>院内・ご来院のご案内</h2>
     <div class="gallery-grid">
-      <figure><img src="https://lh3.googleusercontent.com/d/1bh059pGto1458E5_Gz34hU51Ntdwz7Cz=w800" alt="待合ラウンジ" loading="lazy"><figcaption>カフェのようにくつろげる待合ラウンジ</figcaption></figure>
-      <figure><img src="https://lh3.googleusercontent.com/d/1IgRMevt_6y3duIYRg5e9TP1r6huJgjCE=w800" alt="ライブラリー" loading="lazy"><figcaption>本を手に取れるライブラリースペース</figcaption></figure>
-      <figure><img src="https://lh3.googleusercontent.com/d/1xe5VT3QvGvNuNtZcwS5HjHrvUVaCV5y0=w800" alt="診察室" loading="lazy"><figcaption>プライバシーに配慮した診察室</figcaption></figure>
+      <figure><img src="/lp_assets/lounge.jpg" alt="待合ラウンジ" loading="lazy"><figcaption>カフェのようにくつろげる待合ラウンジ</figcaption></figure>
+      <figure><img src="/lp_assets/library.jpg" alt="ライブラリー" loading="lazy"><figcaption>本を手に取れるライブラリースペース</figcaption></figure>
+      <figure><img src="/lp_assets/exam-room.jpg" alt="診察室" loading="lazy"><figcaption>プライバシーに配慮した診察室</figcaption></figure>
       <figure><img src="https://fika-lc.jp/img/access/access01.png" alt="ビル入口" loading="lazy"><figcaption>「日本橋髙島屋三井ビルディング」入口</figcaption></figure>
       <figure><img src="https://fika-lc.jp/img/access/access04.png" alt="ロビー直通エレベーター" loading="lazy"><figcaption>直通エレベーターで9Fロビーへ</figcaption></figure>
       <figure><img src="https://fika-lc.jp/img/access/access06.png" alt="10F廊下" loading="lazy"><figcaption>10Fの廊下 突き当り右手が当院です</figcaption></figure>
