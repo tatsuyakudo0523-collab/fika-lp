@@ -420,6 +420,28 @@ br.sp{display:none;}
 .gallery-grid figcaption{font-size:12.5px;color:var(--ink-soft);margin-top:7px;text-align:center;line-height:1.6;}
 @media(max-width:720px){.gallery-grid{grid-template-columns:repeat(2,1fr);gap:12px;}}
 .timetable-img{margin-top:16px;border:1px solid var(--line);border-radius:12px;background:#fff;padding:8px;}
+
+/* WEB予約が使えない場合の電話予約案内 */
+.reservation-help{max-width:520px;margin:18px auto 0;padding:18px 16px;background:var(--white);border:1px solid var(--line);border-radius:14px;color:var(--ink);text-align:center;}
+.reservation-help p,.closing .reservation-help p{margin:0;font-size:14px;line-height:1.8;color:var(--ink);}
+.reservation-help strong{color:var(--brand-dark);font-weight:700;}
+.reservation-help .reservation-phone{display:inline-flex;align-items:center;justify-content:center;min-height:48px;margin-top:12px;padding:10px 22px;border-radius:999px;background:var(--brand);color:#fff;font-size:21px;font-weight:700;letter-spacing:.02em;}
+.reservation-help .reservation-phone:hover{background:var(--brand-dark);}
+.reservation-help .reservation-hours{display:block;margin-top:5px;font-size:12px;color:var(--ink-soft);}
+.hero .reservation-help{margin-left:0;}
+.header-help{padding:5px 16px 8px;text-align:center;font-size:12px;line-height:1.7;color:var(--brand-dark);background:var(--beige);}
+.header-help a{font-weight:700;text-decoration:underline;white-space:nowrap;}
+.fixed-cta{flex-wrap:wrap;gap:6px 10px;padding-bottom:calc(10px + env(safe-area-inset-bottom));}
+.fixed-cta .fixed-reservation-help{flex:0 0 100%;font-size:11px;line-height:1.5;text-align:center;color:var(--brand-dark);}
+.fixed-cta .f-tel{background:var(--brand);color:#fff;}
+.fixed-cta .f-web{background:#fff;color:var(--brand-dark);border:1.5px solid var(--brand);}
+@media(max-width:720px){
+  .header-help{font-size:11px;padding:5px 12px;}
+  .reservation-help{padding:16px 12px;}
+  .reservation-help p,.closing .reservation-help p{font-size:13px;}
+  footer{padding-bottom:calc(150px + env(safe-area-inset-bottom));}
+}
+
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -451,6 +473,7 @@ br.sp{display:none;}
       <a class="btn-header" href="https://yoyaku.atlink.jp/fika-lc/" target="_blank" rel="noopener">WEB予約はこちら</a>
     </div>
   </div>
+<p class="header-help">WEB予約が使えない場合も、お電話でご予約可能です。<a href="tel:0369103977">電話で予約：03-6910-3977</a>（受付時間内）</p>
 </header>
 
 
@@ -472,8 +495,11 @@ br.sp{display:none;}
     </ul>
     <div class="cta-block" style="text-align:left;">
       <a class="btn-cta" href="https://yoyaku.atlink.jp/fika-lc/" target="_blank" rel="noopener">WEB予約はこちら</a>
-      <p class="cta-micro">24時間WEB受付・完全予約制</p>
-      <p class="cta-tel">お電話でのご予約 <a href="tel:0369103977">03-6910-3977</a>(受付時間内)</p>
+      <div class="reservation-help">
+        <p><strong>WEB予約がご利用いただけない場合も、<br>お電話でご予約いただけます。</strong><br>「予約したい」と、お気軽にお電話ください。</p>
+        <a class="reservation-phone" href="tel:0369103977" aria-label="03-6910-3977に電話して予約する">電話で予約：03-6910-3977</a>
+        <small class="reservation-hours">受付時間内にお電話ください</small>
+      </div>
     </div>
     </div>
     <div class="hero-imgs">
@@ -509,7 +535,11 @@ br.sp{display:none;}
   </div>
 </section>
 
-<div class="cta-band cta-block"><a class="btn-cta" href="https://yoyaku.atlink.jp/fika-lc/" target="_blank" rel="noopener">WEB予約はこちら</a><p class="cta-micro">24時間WEB受付・完全予約制</p></div>
+<div class="cta-band cta-block"><a class="btn-cta" href="https://yoyaku.atlink.jp/fika-lc/" target="_blank" rel="noopener">WEB予約はこちら</a><div class="reservation-help">
+        <p><strong>WEB予約がご利用いただけない場合も、<br>お電話でご予約いただけます。</strong><br>「予約したい」と、お気軽にお電話ください。</p>
+        <a class="reservation-phone" href="tel:0369103977" aria-label="03-6910-3977に電話して予約する">電話で予約：03-6910-3977</a>
+        <small class="reservation-hours">受付時間内にお電話ください</small>
+      </div></div>
 
 <!-- ===== menu / price(限定解除の中核) ===== -->
 <section data-section="price">
@@ -563,7 +593,11 @@ br.sp{display:none;}
       ・子宮頸がん検査・おりもの検査は生理中を避けてください<br>
       ・ブライダルチェックは検査前3時間の禁食(2時間前までは水のみ可)が必要です
     </div>
-    <div class="cta-block" style="margin-top:40px;"><a class="btn-cta" href="https://yoyaku.atlink.jp/fika-lc/" target="_blank" rel="noopener">WEB予約はこちら</a><p class="cta-micro">24時間WEB受付・完全予約制</p></div>
+    <div class="cta-block" style="margin-top:40px;"><a class="btn-cta" href="https://yoyaku.atlink.jp/fika-lc/" target="_blank" rel="noopener">WEB予約はこちら</a><div class="reservation-help">
+        <p><strong>WEB予約がご利用いただけない場合も、<br>お電話でご予約いただけます。</strong><br>「予約したい」と、お気軽にお電話ください。</p>
+        <a class="reservation-phone" href="tel:0369103977" aria-label="03-6910-3977に電話して予約する">電話で予約：03-6910-3977</a>
+        <small class="reservation-hours">受付時間内にお電話ください</small>
+      </div></div>
   </div>
 </section>
 
@@ -626,7 +660,11 @@ br.sp{display:none;}
       <div class="flow-item"><h3>結果のご説明</h3><p>後日、医師が結果を分かりやすくご説明します(来院またはオンライン)。</p></div>
       <div class="flow-item"><h3>今後のご提案</h3><p>必要に応じてワクチン接種、栄養サポート、妊活サポート等をご案内します。</p></div>
     </div>
-    <div class="cta-block" style="margin-top:40px;"><a class="btn-cta" href="https://yoyaku.atlink.jp/fika-lc/" target="_blank" rel="noopener">WEB予約はこちら</a><p class="cta-micro">24時間WEB受付・完全予約制</p></div>
+    <div class="cta-block" style="margin-top:40px;"><a class="btn-cta" href="https://yoyaku.atlink.jp/fika-lc/" target="_blank" rel="noopener">WEB予約はこちら</a><div class="reservation-help">
+        <p><strong>WEB予約がご利用いただけない場合も、<br>お電話でご予約いただけます。</strong><br>「予約したい」と、お気軽にお電話ください。</p>
+        <a class="reservation-phone" href="tel:0369103977" aria-label="03-6910-3977に電話して予約する">電話で予約：03-6910-3977</a>
+        <small class="reservation-hours">受付時間内にお電話ください</small>
+      </div></div>
   </div>
 </section>
 
@@ -736,8 +774,11 @@ br.sp{display:none;}
   <p>あなたのペースで始められるよう、私たちがお手伝いします。</p>
   <div class="cta-block">
     <a class="btn-cta" href="https://yoyaku.atlink.jp/fika-lc/" target="_blank" rel="noopener">WEB予約はこちら</a>
-    <p class="cta-micro">24時間WEB受付・完全予約制</p>
-    <p class="cta-tel">お電話でのご予約 <a href="tel:0369103977">03-6910-3977</a>(受付時間内)</p>
+    <div class="reservation-help">
+        <p><strong>WEB予約がご利用いただけない場合も、<br>お電話でご予約いただけます。</strong><br>「予約したい」と、お気軽にお電話ください。</p>
+        <a class="reservation-phone" href="tel:0369103977" aria-label="03-6910-3977に電話して予約する">電話で予約：03-6910-3977</a>
+        <small class="reservation-hours">受付時間内にお電話ください</small>
+      </div>
   </div>
 </div>
 
@@ -754,6 +795,7 @@ br.sp{display:none;}
 </footer>
 <!-- ===== 固定CTA(モバイルのみ表示) ===== -->
 <div class="fixed-cta">
+  <p class="fixed-reservation-help">WEB予約が使えない場合も、お電話でご予約いただけます。</p>
   <a class="f-tel" href="tel:0369103977">☎ 電話で予約</a>
   <a class="f-web" href="https://yoyaku.atlink.jp/fika-lc/" target="_blank" rel="noopener">WEB予約(24時間)</a>
 </div>
